@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const ExperienceInfo = ({ number, text }) => {
   return (
     <div className="flex flex-col justify-center items-center">
