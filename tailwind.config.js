@@ -33,7 +33,7 @@ export default {
       cyan: "#15d1e9",
       lightCyan: "#88e5f0",
       darkCyan: "#009fb3",
-      orange: "#E54877",
+      orange: "#21BF73",
       lightOrange: "#fac27b",
       darkOrange: "#d28422",
       grey: "#626965",
