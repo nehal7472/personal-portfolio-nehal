@@ -4,6 +4,7 @@ import ExperienceMain from "./components/experienceSection/ExperienceMain";
 import FooterMain from "./components/footer/FooterMain";
 import HeroGradient from "./components/heroSection/HeroGradient";
 import HeroMain from "./components/heroSection/HeroMain";
+import Modal from "./components/modal/Modal";
 import NavbarMain from "./components/navbar/NavbarMain";
 import ProjectsMain from "./components/projectsSection/ProjectsMain";
 import SkillsMain from "./components/skillsSection/SkillsMain";
@@ -14,6 +15,7 @@ function App() {
   return (
     <main className="font-body text-white relative overflow-hidden">
       <NavbarMain />
+      <Modal />
       <HeroMain />
       <HeroGradient />
       <SubHeroMain />
