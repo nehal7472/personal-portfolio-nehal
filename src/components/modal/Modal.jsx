@@ -2,12 +2,12 @@ import Resume from "../../assets/resume.pdf";
 
 function Modal() {
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-8 right-8 z-50 animate-bounce">
       <div className="group relative">
         <a
           href={Resume}
           download="Ahsanul_Haque_Resume.pdf"
-          className="px-5 py-3 bg-[#21BF73] dark:bg-gray-800 border border-orange-500 text-orange-500 rounded-full shadow-lg hover:bg-orange-500 hover:text-white transition-all duration-300"
+          className="px-5 py-3 bg-[#21BF73] dark:bg-gray-800 border border-orange-500 text-orange-500 rounded-full shadow-lg hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-105"
         >
           Download CV
         </a>
