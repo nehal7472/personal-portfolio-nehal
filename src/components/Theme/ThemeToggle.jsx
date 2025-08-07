@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "../../state/themeSlice";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 const NavLightDark = () => {
-  const [theme, setTheme] = useState("light");
+  const theme = useSelector((state) => state.theme.theme);
+  const dispatch = useDispatch();
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  const handleToggle = () => {
+    dispatch(toggleTheme());
   };
 
   useEffect(() => {
@@ -15,13 +18,13 @@ const NavLightDark = () => {
   return (
     <li>
       <button
-        onClick={toggleTheme}
+        onClick={handleToggle}
         className="p-2 rounded-full border-2 border-darkCyan 
-                   bg-gradient-to-tr from-darkCyan to-orange 
-                   hover:from-orange hover:to-darkCyan
-                   text-white shadow-lg transition-all duration-500 
-                   ease-in-out transform hover:scale-110 hover:shadow-xl
-                   flex items-center justify-center group"
+                 bg-gradient-to-tr from-darkCyan to-orange 
+                 hover:from-orange hover:to-darkCyan
+                 text-white shadow-lg transition-all duration-500 
+                 ease-in-out transform hover:scale-110 hover:shadow-xl
+                 flex items-center justify-center group"
         title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
       >
         {theme === "light" ? (

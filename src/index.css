@@ -6,3 +6,48 @@
 body {
   @apply bg-darkBrown;
 }
+
+/* Light mode animated background */
+@keyframes gradientLight {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-animated-light {
+  background: linear-gradient(
+    270deg,
+    #166534,   /* darker green */
+    #a16207,   /* darker mustard */
+    #0c4a6e,   /* darker blue */
+    #a16207
+  );
+  background-size: 800% 800%;
+  animation: gradientLight 15s ease infinite;
+}
+
+
+
+/* Dark mode animated background */
+@keyframes gradientDark {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-dark {
+  background: linear-gradient(270deg, #2c2523, #53423e, #1e1917, #645550);
+  background-size: 800% 800%;
+  animation: gradientDark 15s ease infinite;
+}

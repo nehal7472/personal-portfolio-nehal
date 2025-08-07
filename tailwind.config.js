@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class", // Enable dark mode
+
+  // ✅ Safelist dynamic classes used in JSX (like bg-animated-dark/light)
+  safelist: ["bg-animated-dark", "bg-animated-light"],
+
+  darkMode: "class", // Important for class-based dark mode
+
   theme: {
     screens: {
       sm: "350px",
@@ -40,5 +45,6 @@ export default {
       special: ['"Nunito"'],
     },
   },
+
   plugins: [],
 };
