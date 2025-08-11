@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import AllSkills from "./AllSkills";
 import AllSkillsSM from "./AllSkillsSM";
 import SkillsText from "./SkillsText";
@@ -5,8 +6,15 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const SkillsMain = () => {
+  const theme = useSelector((state) => state.theme.theme);
+
   return (
-    <div id="skills">
+    <div
+      id="skills"
+      className={`transition-all duration-300 ${
+        theme === "dark" ? "bg-animated-dark" : "bg-animated-light"
+      }`}
+    >
       <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
         <motion.div
           variants={fadeIn("down", 0.2)}

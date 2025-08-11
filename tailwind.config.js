@@ -39,6 +39,10 @@ export default {
         orangeBigShadow: "10px 10px 10000px 500px rgba(240, 169, 79, 0.3)",
         orangeMediumShadow: "10px 10px 2000px 150px rgba(240, 169, 79, 0.5)",
       },
+      colors: {
+        cyan: "#15D1E9",
+        orange: "#YOUR_ORANGE_COLOR", // Replace with your orange hex
+      },
     },
     fontFamily: {
       body: ["Josefin Sans"],

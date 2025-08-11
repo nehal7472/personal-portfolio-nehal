@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
@@ -49,8 +50,15 @@ const projects = [
 ];
 
 const ProjectsMain = () => {
+  const theme = useSelector((state) => state.theme.theme);
+
   return (
-    <div id="projects" className="max-w-[1200px] mx-auto px-4">
+    <div
+      id="projects"
+      className={`max-w-full mx-auto py-[20px] md:py-[100px] px-4 md:px-24 transition-all duration-300 ${
+        theme === "dark" ? "bg-animated-dark" : "bg-animated-light"
+      }`}
+    >
       <motion.div
         variants={fadeIn("top", 0)}
         initial="hidden"

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-darkBrown;
+  @apply bg-cyan;
 }
 
 /* Light mode animated background */
@@ -47,7 +47,7 @@ body {
 }
 
 .bg-animated-dark {
-  background: linear-gradient(270deg, #2c2523, #53423e, #1e1917, #645550);
+  background: linear-gradient(270deg, #1a1615, #3b2a26, #130f0e, #251c19);
   background-size: 800% 800%;
   animation: gradientDark 15s ease infinite;
 }

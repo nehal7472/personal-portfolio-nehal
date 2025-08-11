@@ -1,12 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useSelector } from "react-redux";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState("");
+  const theme = useSelector((state) => state.theme.theme);
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -45,7 +47,11 @@ const ContactForm = () => {
           name="from_name"
           placeholder="Your Name"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className={`h-12 rounded-lg px-2 text-gray-900  ${
+            theme === "dark"
+              ? "bg-lightBrown"
+              : "bg-white text-black border-gray-300"
+          } transition-all duration-500`}
           value={name}
           onChange={handleName}
         />
@@ -54,7 +60,11 @@ const ContactForm = () => {
           name="from_email"
           placeholder="Your Email"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className={`h-12 rounded-lg px-2 text-gray-900  ${
+            theme === "dark"
+              ? "bg-lightBrown"
+              : "bg-white text-black border-gray-300"
+          } transition-all duration-500`}
           value={email}
           onChange={handleEmail}
         />
@@ -65,7 +75,11 @@ const ContactForm = () => {
           cols="50"
           placeholder="Message"
           required
-          className=" rounded-lg bg-lightBrown p-2"
+          className={`h-12 rounded-lg px-2 text-gray-900  ${
+            theme === "dark"
+              ? "bg-lightBrown"
+              : "bg-white text-black border-gray-300"
+          } transition-all duration-500`}
           value={message}
           onChange={handleMessage}
         />
