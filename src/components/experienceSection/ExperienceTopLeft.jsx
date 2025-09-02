@@ -9,7 +9,7 @@ const ExperienceTopLeft = () => {
       <div className="flex justify-center items-center gap-4">
         <ExperienceInfo number="4" text="Years" />
         <p className="font-bold text-6xl text-lightBrown">-</p>
-        <ExperienceInfo number="18" text="Websites" />
+        <ExperienceInfo number="32" text="Websites" />
       </div>
       <p className="text-center">
         With 4 years of experience building dynamic and user-friendly web
