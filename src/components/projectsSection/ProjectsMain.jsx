@@ -7,6 +7,27 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
+    name: "Suddhi",
+    year: "October2025",
+    align: "right",
+    image: "/images/WebsiteImg18.png",
+    link: "https://edupybd.com/",
+  },
+  {
+    name: "GyanPeon",
+    year: "September2025",
+    align: "left",
+    image: "/images/WebsiteImg17.png",
+    link: "https://www.gyanpeon.com/",
+  },
+  {
+    name: "KarmaGram",
+    year: "September2025",
+    align: "right",
+    image: "/images/WebsiteImg16.png",
+    link: "https://github.com/nehal7472",
+  },
+  {
     name: "Book-Store",
     year: "July2025",
     align: "left",
