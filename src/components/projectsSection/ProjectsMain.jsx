@@ -7,6 +7,13 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
+    name: "GyanPeon",
+    year: "September2025",
+    align: "left",
+    image: "/images/WebsiteImg17.png",
+    link: "https://www.gyanpeon.com/",
+  },
+  {
     name: "Suddhi",
     year: "October2025",
     align: "right",
@@ -14,11 +21,25 @@ const projects = [
     link: "https://edupybd.com/",
   },
   {
-    name: "GyanPeon",
-    year: "September2025",
+    name: "Agro",
+    year: "October2025",
     align: "left",
-    image: "/images/WebsiteImg17.png",
-    link: "https://www.gyanpeon.com/",
+    image: "/images/WebsiteImg19.png",
+    link: "https://agro-green-eight.vercel.app/",
+  },
+  {
+    name: "Shishu Store",
+    year: "October2025",
+    align: "eight",
+    image: "/images/WebsiteImg20.png",
+    link: "https://shishu-store.vercel.app/",
+  },
+  {
+    name: "Think-Lila",
+    year: "October2025",
+    align: "left",
+    image: "/images/WebsiteImg21.png",
+    link: "https://think-lila-next-js-graphql.vercel.app/",
   },
   {
     name: "KarmaGram",
@@ -27,6 +48,7 @@ const projects = [
     image: "/images/WebsiteImg16.png",
     link: "https://github.com/nehal7472",
   },
+
   {
     name: "Book-Store",
     year: "July2025",
